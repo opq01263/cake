@@ -213,7 +213,7 @@ writing-mode: vertical-lr
     background-color: #ddd;
     top: 15px;
     left: -50%;
-    z-index: 1;
+    z-index: -1;
   }
   .progress-1 li:first-child:after {
     content:none;
@@ -227,3 +227,12 @@ writing-mode: vertical-lr
   .progress-1 li.active + li:after {
     background-color: red;
   }
+
+ .inputCard2{
+   position: relative;
+ }
+ .iconcard{
+   position: absolute;
+   top: 62%;
+   right: 40px;
+ }

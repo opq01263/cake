@@ -14148,7 +14148,7 @@ a.text-wgreen:hover, a.text-wgreen:focus {
   background-color: #ddd;
   top: 15px;
   left: -50%;
-  z-index: 1;
+  z-index: -1;
 }
 
 .progress-1 li:first-child:after {
@@ -14166,4 +14166,21 @@ a.text-wgreen:hover, a.text-wgreen:focus {
 .progress-1 li.active + li:after {
   background-color: red;
 }
-/*# sourceMappingURL=all.css.map */
+
+.inputCard2 {
+  position: relative;
+}
+
+.iconcard {
+  position: absolute;
+  top: 62%;
+  right: 40px;
+}
+.endimg{
+  position: relative;
+}
+.textend{
+  position: absolute;
+  top: 40%;
+  left: 43%;
+}
