@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheets\all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+    <section>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+                <button class="navbar-toggler d-md-none d-flex align-items-center" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fas fa-bars text-bgreen"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo-all-dark.svg" height="40" class="d-md-inline-block d-none">
+                    <img src="images/logotype-sm-dark.svg" height="18" class="d-inline-block d-md-none">
+                </a>
+                <div class="dropdown nav-link text-bgreen align-items-center d-flex order-md-1">
+                    <button class="btn btn-sm btn-cart text-bgreen" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" style="min-width: 300px">
+                        <div class="px-4 py-3">
+                            <h6 class="text-center">已選擇商品</h6>
+                            <table class="table table-sm">
+                                <tbody>
+                                    <tr>
+                                        <td class="align-middle text-center"><a href="#removeModal" class="text-muted"
+                                                data-backdrop="static" data-toggle="modal" data-target="#removeModal"
+                                                data-title="焦糖馬卡龍 1 份"><i class="fas fa-trash-alt"></i></a></td>
+                                        <td class="align-middle">焦糖馬卡龍</td>
+                                        <td class="align-middle">1份</td>
+                                        <td class="align-middle text-right">$450</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle text-center"><a href="#removeModal" class="text-muted"
+                                                data-backdrop="static" data-toggle="modal" data-target="#removeModal"
+                                                data-title="焦糖馬卡龍 1 份"><i class="fas fa-trash-alt"></i></a></td>
+                                        <td class="align-middle">焦糖馬卡龍</td>
+                                        <td class="align-middle">1份</td>
+                                        <td class="align-middle text-right">$450</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <a href="car.html" class="btn btn-primary btn-block">結帳去</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link text-bgreen font-weight-bold active" href="index.html">首頁<span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-bgreen" href="product.html">甜點</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-bgreen" href="login.html">登入</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-6">
+                    <div class="card h-75">
+                        <div class="card-body bg-bgreen" style="">
+                            <div class="row">
+                                <div class="col-4">
+                                    <h5 class="text-center font-weight-bold h3 text-wblue">付款</h5>
+                                </div>
+                                <div class="col-8">
+                                    <!-- 背景色把偽元素給蓋過去了.....怎麼半?QQ-->
+                                    <ul class="progress-1">
+                                        <li></li>
+                                        <li class="active"></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-12 d-flex justify-content-center">
+                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                        <label class="btn btn-outline-wblue btn-bgreen active  font-weight-bold"
+                                            style="width:190px;height:40px;">
+                                            <input type="radio" name="options" id="option1" autocomplete="off" checked>
+                                            電子發票
+                                        </label>
+                                        <label class="btn btn-outline-wblue font-weight-bold"
+                                            style="width:190px;height:40px;">
+                                            <input type="radio" name="options" id="option3" autocomplete="off"> 郵寄發票
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex justify-content-center mt-3">
+                                    <form class=" font-weight-bold h5 text-wblue">
+                                        <div class="form-group">
+                                            <label for="emailcheakout3">電子郵件信箱</label>
+                                            <input type="email" class="form-control" id="emailcheakout3"
+                                                placeholder="qq@gmail.com" style="width:380px;height:40px;">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="textNumber">統一編號(選填)</label>
+                                            <input type="text" class="form-control" id="textNumber"
+                                                placeholder="12345678" style="width:380px;height:40px;">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="btn btn-accent d-block ">
+                            <a href="cheakout3-1.html" class="text-center text-bgreen h2 font-weight-bold"
+                                style="text-decoration:none">下一步</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="row d-md-block d-none">
+                        <div class="col">
+                            <table class="table table-borderless">
+                                <tbody class="text-minor border border-wblue">
+                                    <h2 class="h4 font-weight-bold text-minor text-center bg-wblue py-3 mb-0"
+                                        style="height: 65px">訂單摘要</h2>
+                                    <tr>
+                                        <th scope="row">小計</th>
+                                        <td class="text-right">NT$ 2,700</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">運費</th>
+                                        <td class="text-right">NT$ 300</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="h5 font-weight-bold">總計</th>
+                                        <td class="h5 font-weight-bold text-right">NT$ 3,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col">
+                            <div class=" border border-wblue">
+                                <h2 class="h4 font-weight-bold text-minor text-center bg-wblue py-3 mb-0"
+                                    style="height: 65px">購物清單</h2>
+                                <div class="row">
+                                    <div class="col-12 mt-1">
+                                        <div class="row">
+                                            <div class="col">
+                                                <img src="https://bit.ly/2zL5jN7" alt=""
+                                                    style="width:120px;height:80px;">
+
+                                            </div>
+                                            <div class="col">
+                                                <div class="text-wgreen">
+                                                    <p> 焦糖馬卡龍（2）</p>
+                                                    <p>NT$ 900</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-1">
+                                        <div class="row">
+                                            <div class="col">
+                                                <img src="https://bit.ly/2zL5jN7" alt=""
+                                                    style="width:120px;height:80px;">
+
+                                            </div>
+                                            <div class="col">
+                                                <div class="text-wgreen">
+                                                    <p> 焦糖馬卡龍（2）</p>
+                                                    <p>NT$ 900</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-1">
+                                        <div class="row">
+                                            <div class="col">
+                                                <img src="https://bit.ly/2zL5jN7" alt=""
+                                                    style="width:120px;height:80px;">
+
+                                            </div>
+                                            <div class="col">
+                                                <div class="text-wgreen">
+                                                    <p> 焦糖馬卡龍（2）</p>
+                                                    <p>NT$ 900</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-1">
+                                        <div class="row">
+                                            <div class="col">
+                                                <img src="https://bit.ly/2zL5jN7" alt=""
+                                                    style="width:120px;height:80px;">
+
+                                            </div>
+                                            <div class="col">
+                                                <div class="text-wgreen">
+                                                    <p> 焦糖馬卡龍（2）</p>
+                                                    <p>NT$ 900</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+
+
+
+
+    </section>
+
+    <section>
+        <div class="bg-bgreen mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 col-12 my-1 py-md-5 font-weight-bold d-flex align-items-center">
+                        <img src="images/logo-light.svg" alt="" style="width: 40px;height: 40px;">
+                        <span class="text-white mx-3 mb-0">訂閱你我的甜蜜郵件</span>
+                    </div>
+                    <div class="col-md-6 col-12 py-md-5 my-1  d-flex align-items-center">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="請輸入您的電子郵件..."
+                                aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-accent" type="button" id="button-addon2"><i
+                                        class="fa fa-arrow-right  text-bgreen"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section>
+        <footer class="bg-wblue py-3 py-md-10 pl-md-3 pl-md-0">
+            <div class="container  text-bgreen">
+                <div class="row mb-3 d-flex justify-content-center">
+                    <div class="col-md-5 d-flex flex-column justify-content-between">
+                        <div>
+                            <img src="images/logotype-lg-dark.svg" width="171.22px" height="26.6px" alt="">
+                        </div>
+                        <ul class="list-unstyled mt-3">
+                            <li>07-1234-5678</li>
+                            <li>sweetaste@email.com</li>
+                            <li>800 高雄市新興區幸福路 520 號</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5 text-right d-md-block d-none">
+                        <span class="text-hide">
+                            今天是個吃甜點的好日子
+                            <img src="images/sm-今天是個吃甜點的好日子.svg" width="59.28px" height="218.69px" alt="">
+                        </span>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center flex-column-md">
+                    <div class="col-md-5 mb-10 mb-md-0">
+                        <img src="images/ic-line@.svg" width="32px" height="32px" alt="">
+                        <img src="images/ic-facebook.svg" width="32px" height="32px" alt="">
+                    </div>
+                    <div class="col-md-5 d-flex align-items-end justify-content-start justify-content-md-end">
+                        <span>© 2019 Sweetaste* All Rights Reserved</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+
+
+    <section>
+        <div class="modal fade" id="removeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header badge-danger text-white">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-body display-5">
+                            請問您是否確認刪除訂單？
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                        <button type="button" class="btn btn-outline-danger">確認刪除</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            var btn = $(event.relatedTarget);
+            var title = btn.data('title');
+            var modal = $(this);
+            modal.find('.modal-title').text('確認刪除 ' + title);
+        })
+        });
+    </script>
+</body>
+
+</html>
