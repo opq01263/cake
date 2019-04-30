@@ -75,9 +75,9 @@
     </section>
     <section>
         <div class="container">
-            <div class="row ">
-                <div class="col-md-6">
-                    <div class="card h-75">
+            <div class="row d-flex justify-content-center ">
+                <div class="col-md-5">
+                    <div class="card h-50">
                         <div class="card-body bg-bgreen" style="">
                             <div class="row">
                                 <div class="col-4">
@@ -86,209 +86,203 @@
                                 <div class="col-8">
                                     <!-- 背景色把偽元素給蓋過去了.....怎麼半?QQ-->
                                     <ul class="progress-1">
-                                        <li></li>
                                         <li class="active"></li>
+                                        <li></li>
                                         <li></li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="row mt-3">
-                                <div class="col-md-12 d-flex justify-content-center">
+                            <div class="row">
+                                <div class="col-md-12 d-flex justify-content-center mt-3">
                                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                        <label class="btn btn-outline-wblue font-weight-bold"
-                                            style="width:190px;height:40px;">
+                                        <label
+                                            class="btn btn-outline-wblue btn-bgreen active  font-weight-bold d-block">
                                             <input type="radio" name="options" id="option1" autocomplete="off" checked>
                                             電子發票
                                         </label>
-                                        <label class="btn btn-outline-wblue btn-bgreen active font-weight-bold"
-                                            style="width:190px;height:40px;">
+                                        <label class="btn btn-outline-wblue font-weight-bold">
                                             <input type="radio" name="options" id="option3" autocomplete="off"> 郵寄發票
                                         </label>
                                     </div>
-
                                 </div>
-                                <div class="col-md-12 d-flex justify-content-center">
-                                    <div class="mt-3 px-0 text-wblue font-weight-bold h5">
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <h3>地址</h3>
+                                <div class="col-md-12">
+                                    <div class="row mt-3 px-0 text-wblue font-weight-bold h5">
+                                        <div class="col-6 text-center">
+                                            <div class="h5">地址</div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-group form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">同運送地址</label>
                                             </div>
-                                            <div class="col-6 mt-1">
-                                                <div class="form-group form-check">
-                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                                    <label class="form-check-label" for="exampleCheck1">同運送地址</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-row">
+                                        <div class="form-group col-6" >
+                                            <select id="inputState" class="form-control">
+                                                <option selected>高雄市</option>
+                                                <option>...</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-6">
+                                            <select id="inputState" class="form-control">
+                                                <option selected>苓雅區</option>
+                                                <option>...</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group ">
+                                        <label for="inputAddress2">地址</label>
+                                        <input type="text" class="form-control" id="inputAddress2"
+                                            placeholder="幸福路520號">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group ">
+                                        <label for="textNumber">統一編號(選填)</label>
+                                        <input type="text" class="form-control" id="textNumber" placeholder="12345678">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn btn-accent d-block ">
+                            <a href="cheakout3.html" class="text-center text-bgreen h2 font-weight-bold"
+                                style="text-decoration:none">下一步</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+                    <div class="row d-md-block d-none">
+                        <div class="col">
+                            <table class="table table-borderless">
+                                <tbody class="text-minor border border-wblue">
+                                    <h2 class="h4 font-weight-bold text-minor text-center bg-wblue py-3 mb-0"
+                                        style="height: 65px">訂單摘要</h2>
+                                    <tr>
+                                        <th scope="row">小計</th>
+                                        <td class="text-right">NT$ 2,700</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">運費</th>
+                                        <td class="text-right">NT$ 300</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="h5 font-weight-bold">總計</th>
+                                        <td class="h5 font-weight-bold text-right">NT$ 3,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col">
+                            <div class=" border border-wblue">
+                                <h2 class="h4 font-weight-bold text-minor text-center bg-wblue py-3 mb-0"
+                                    style="height: 65px">購物清單</h2>
+                                <div class="row">
+                                    <div class="col-12 mt-1">
+                                        <div class="row">
+                                            <div class="col">
+                                                <img src="https://bit.ly/2zL5jN7" alt=""
+                                                    style="width:120px;height:80px;">
+
+                                            </div>
+                                            <div class="col">
+                                                <div class="text-wgreen">
+                                                    <p> 焦糖馬卡龍（2）</p>
+                                                    <p>NT$ 900</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-1">
+                                        <div class="row">
+                                            <div class="col">
+                                                <img src="https://bit.ly/2zL5jN7" alt=""
+                                                    style="width:120px;height:80px;">
+
+                                            </div>
+                                            <div class="col">
+                                                <div class="text-wgreen">
+                                                    <p> 焦糖馬卡龍（2）</p>
+                                                    <p>NT$ 900</p>
                                                 </div>
                                             </div>
 
                                         </div>
-                                        <div class="form-row">
-                                            <div class="form-group col-md-6"  style="width:280px;">
-                                                <select id="inputState" class="form-control">
-                                                    <option selected>高雄市</option>
-                                                    <option>...</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-group col-md-6">
-                                                <select id="inputState" class="form-control">
-                                                    <option selected>苓雅區</option>
-                                                    <option>...</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="form-group col-md-12">
-                                            <label for="inputAddress2">地址</label>
-                                            <input type="text" class="form-control" id="inputAddress2"
-                                                placeholder="幸福路520號">
-                                        </div>
-                                        <div class="form-group col-md-12">
-                                            <label for="textNumber">統一編號(選填)</label>
-                                            <input type="text" class="form-control" id="textNumber"
-                                                placeholder="12345678" style="width:380px;height:40px;">
-                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-1">
+                                        <div class="row">
+                                            <div class="col">
+                                                <img src="https://bit.ly/2zL5jN7" alt=""
+                                                    style="width:120px;height:80px;">
 
+                                            </div>
+                                            <div class="col">
+                                                <div class="text-wgreen">
+                                                    <p> 焦糖馬卡龍（2）</p>
+                                                    <p>NT$ 900</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-1">
+                                        <div class="row">
+                                            <div class="col">
+                                                <img src="https://bit.ly/2zL5jN7" alt=""
+                                                    style="width:120px;height:80px;">
+
+                                            </div>
+                                            <div class="col">
+                                                <div class="text-wgreen">
+                                                    <p> 焦糖馬卡龍（2）</p>
+                                                    <p>NT$ 900</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
                                 </div>
 
-                                </form>
                             </div>
 
                         </div>
                     </div>
 
-                    <div class="btn btn-accent d-block ">
-                        <a href="cheakout4.html" class="text-center text-bgreen h2 font-weight-bold"
-                            style="text-decoration:none">下一步</a>
-                    </div>
+
+
                 </div>
 
             </div>
-            <div class="col-md-4">
-                <div class="row d-md-block d-none">
-                    <div class="col">
-                        <table class="table table-borderless">
-                            <tbody class="text-minor border border-wblue">
-                                <h2 class="h4 font-weight-bold text-minor text-center bg-wblue py-3 mb-0"
-                                    style="height: 65px">訂單摘要</h2>
-                                <tr>
-                                    <th scope="row">小計</th>
-                                    <td class="text-right">NT$ 2,700</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">運費</th>
-                                    <td class="text-right">NT$ 300</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="h5 font-weight-bold">總計</th>
-                                    <td class="h5 font-weight-bold text-right">NT$ 3,000</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="col">
-                        <div class=" border border-wblue">
-                            <h2 class="h4 font-weight-bold text-minor text-center bg-wblue py-3 mb-0"
-                                style="height: 65px">購物清單</h2>
-                            <div class="row">
-                                <div class="col-12 mt-1">
-                                    <div class="row">
-                                        <div class="col">
-                                            <img src="https://bit.ly/2zL5jN7" alt="" style="width:120px;height:80px;">
 
-                                        </div>
-                                        <div class="col">
-                                            <div class="text-wgreen">
-                                                <p> 焦糖馬卡龍（2）</p>
-                                                <p>NT$ 900</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 mt-1">
-                                    <div class="row">
-                                        <div class="col">
-                                            <img src="https://bit.ly/2zL5jN7" alt="" style="width:120px;height:80px;">
-
-                                        </div>
-                                        <div class="col">
-                                            <div class="text-wgreen">
-                                                <p> 焦糖馬卡龍（2）</p>
-                                                <p>NT$ 900</p>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="col-12 mt-1">
-                                    <div class="row">
-                                        <div class="col">
-                                            <img src="https://bit.ly/2zL5jN7" alt="" style="width:120px;height:80px;">
-
-                                        </div>
-                                        <div class="col">
-                                            <div class="text-wgreen">
-                                                <p> 焦糖馬卡龍（2）</p>
-                                                <p>NT$ 900</p>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="col-12 mt-1">
-                                    <div class="row">
-                                        <div class="col">
-                                            <img src="https://bit.ly/2zL5jN7" alt="" style="width:120px;height:80px;">
-
-                                        </div>
-                                        <div class="col">
-                                            <div class="text-wgreen">
-                                                <p> 焦糖馬卡龍（2）</p>
-                                                <p>NT$ 900</p>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
+</section> <section>
+            <div class="bg-bgreen mt-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 col-12 my-1 py-md-5 font-weight-bold d-flex align-items-center">
+                            <img src="images/logo-light.svg" alt="" style="width: 40px;height: 40px;">
+                            <span class="text-white mx-3 mb-0">訂閱你我的甜蜜郵件</span>
                         </div>
-
-                    </div>
-                </div>
-
-
-
-            </div>
-
-        </div>
-
-
-
-
-
-    </section>
-
-    <section>
-        <div class="bg-bgreen mt-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-5 col-12 my-1 py-md-5 font-weight-bold d-flex align-items-center">
-                        <img src="images/logo-light.svg" alt="" style="width: 40px;height: 40px;">
-                        <span class="text-white mx-3 mb-0">訂閱你我的甜蜜郵件</span>
-                    </div>
-                    <div class="col-md-6 col-12 py-md-5 my-1  d-flex align-items-center">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="請輸入您的電子郵件..."
-                                aria-label="Recipient's username" aria-describedby="button-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-accent" type="button" id="button-addon2"><i
-                                        class="fa fa-arrow-right  text-bgreen"></i></button>
+                        <div class="col-md-6 col-12 py-md-5 my-1  d-flex align-items-center">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="請輸入您的電子郵件..."
+                                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                                <div class="input-group-append">
+                                    <button class="btn btn-accent" type="button" id="button-addon2"><i
+                                            class="fa fa-arrow-right  text-bgreen"></i></button>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
 
             </div>
-
-        </div>
     </section>
     <section>
         <footer class="bg-wblue py-3 py-md-10 pl-md-3 pl-md-0">
